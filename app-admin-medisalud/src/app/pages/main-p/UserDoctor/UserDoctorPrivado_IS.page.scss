@@ -1,0 +1,51 @@
+.user-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 16px 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  .user-name {
+    font-size: 22px;
+    font-weight: 900;
+    color: #222;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+  }
+
+  .user-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+
+    p {
+      margin: 0;
+      font-size: 15px;
+      color: #555;
+
+      strong {
+        color: #000;
+        margin-right: 6px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .user-status-select {
+    align-self: flex-start;
+    min-width: 160px;
+    margin-left: auto;
+    font-weight: 600;
+    color: #444;
+  }
+}

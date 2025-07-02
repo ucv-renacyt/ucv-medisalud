@@ -1,0 +1,45 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular
+/dist/
+/.angular/cache/
+
+# Ionic/Capacitor
+/.ionic/
+/.capacitor/
+
+# Android
+*.apk
+*.ap_ 
+*.aab
+*.jks
+/android/
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Otros
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# NX
+.nx/
+
+# Logs
+logs/
+*.log
+
+# Test coverage
+coverage/
+
+# Build
+build/
+www/ 

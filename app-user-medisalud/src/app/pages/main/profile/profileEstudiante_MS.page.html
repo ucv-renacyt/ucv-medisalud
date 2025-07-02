@@ -1,0 +1,46 @@
+<app-header-estudiante-ms [showMenu]="true" title="Perfil"></app-header-estudiante-ms>
+
+<ion-content class="ion-padding-top ion-text-center">
+  <ion-card>
+    <img class="perfil-icon" src="../assets/icon/perfilEstudiante.svg" alt="">
+    <ion-card-header>
+      <ion-card-title class="user-name">{{ user()?.name }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="none" class="user-info">
+        <ion-label>
+          <h2>Teléfono:</h2>
+          <p>{{ user()?.phone }}</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none" class="user-info">
+        <ion-label>
+          <h2>DNI:</h2>
+          <p>{{ user()?.dni }}</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none" class="user-info">
+        <ion-label>
+          <h2>Facultad:</h2>
+          <p>{{ user()?.facultad }}</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none" class="user-info">
+        <ion-label>
+          <h2>Email:</h2>
+          <p>{{ user()?.email }}</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item button detail>
+        <ion-label routerLink="/terms">Términos & Condiciones</ion-label>
+      </ion-item>
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>
