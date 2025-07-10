@@ -1,13 +1,12 @@
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 <ion-content class="content-background">
   <div class="form-container">
-    <img class="logo-img" src="../assets/icon/logoDoctor.svg" alt="">
+<i class="fa-solid fa-suitcase-medical" style="color: #38365c; font-size: 7rem; margin: 1rem auto;"></i>
     <form [formGroup]="form" class="auth-form" (ngSubmit)="submit()" (keypress.enter)="submit">
-   
+
 
       <!--=============== Email ===================-->
-      <app-custom-input 
-        autocomplete="email" 
+      <app-custom-input autocomplete="email"
         [control]="form.controls.email"
         type="email"
         label="Correo"
@@ -20,7 +19,7 @@
       </div>
       <!--=============== Email ===================-->
 
-      <app-custom-input 
+      <app-custom-input
         [control]="form.controls.password"
          [type]="passwordFieldType"
         label="Contraseña"
@@ -37,22 +36,22 @@
         <ion-label class="remember-me-label">Recordar</ion-label>
       </div>
 
-      
+
 
       <!-- Botones -->
       <ion-button expand="block" mode="ios" class="submit-button elegant-button" type="submit" [disabled]="form.invalid">
         Ingresar
-        
+
       </ion-button>
 
       <ion-button expand="block" mode="ios" routerLink="/welcome" class="submit-button elegant-button" >
         Regresar
-        
+
       </ion-button>
-     
+
     </form>
     <p routerLink="forgot-password" class="forgot-password-link">¡Olvidaste tu contraseña?</p>
-     <br><br><br><br>   
+    <br><br><br><br>
   </div>
- 
+
 </ion-content>

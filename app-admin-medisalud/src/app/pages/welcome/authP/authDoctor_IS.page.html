@@ -1,13 +1,13 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 <app-header title="Login SuperAdmin "></app-header>
 <ion-content class="content-background">
   <div class="d-flex-center">
     <!-- Este es el formulario -->
     <form [formGroup]="form" class="auth-form" (ngSubmit)="submit()" (keypress.enter)="submit">
-      <img class="logo-SA" src="../assets/logoSuperAdmin.svg" alt="">
-
+      <i class="fa-solid fa-suitcase-medical" style="color: #00bf63; font-size: 7rem; margin: 50px auto;"></i>
       <!--=============== Email ===================-->
-      <app-custom-input 
-        autocomplete="email" 
+      <app-custom-input autocomplete="email"
         [control]="form.controls.email"
         type="email"
         label="Correo"
@@ -20,7 +20,7 @@
       </div>
       <!--=============== Email ===================-->
 
-      <app-custom-input 
+      <app-custom-input
         [control]="form.controls.password"
             [type]="passwordFieldType"
         label="Contraseña"
@@ -40,8 +40,8 @@
 
 
 
-      
-        
+
+
     </form>
   </div>
 </ion-content>

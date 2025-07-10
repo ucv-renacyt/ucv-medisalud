@@ -1,5 +1,6 @@
 <app-header [showMenu]="true"  title="Perfil"></app-header>
 <ion-content class="ion-padding-top ion-text-center">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- <ion-avatar>
     <img *ngIf="user()?.image" [src]="user()?.image" />
@@ -12,7 +13,7 @@
   </ion-button> -->
 
   <ion-card>
-    <img class="perfil-icon" src="../assets/icon/doctorPerfil.svg" alt="">
+      <i class="fa-solid fa-user-doctor" style="color: #38365c; font-size: 7rem; margin: 1rem auto;"></i>
     <ion-card-header>
       <ion-card-title class="user-name">{{user().name}}</ion-card-title>
     </ion-card-header>
