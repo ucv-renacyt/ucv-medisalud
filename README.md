@@ -27,3 +27,23 @@ Cada aplicación está desarrollada con tecnologías modernas (Angular, Ionic, C
    ```
 
 ---
+
+## Generar APK de prueba
+
+Requisitos: Node.js, JDK 17 y Android SDK con la plataforma 34 y Build Tools 34.0.0.
+Configura `JAVA_HOME` y `ANDROID_HOME` según las rutas de tu equipo.
+
+Ejecuta estos comandos dentro de cada aplicación (`app-user-medisalud`,
+`app-doctor-medisalud` y `app-admin-medisalud`):
+
+```bash
+npm ci
+npm run build
+npx cap sync android
+cd android
+sh ./gradlew assembleDebug
+```
+
+Cada APK se genera en `android/app/build/outputs/apk/debug/app-debug.apk`.
+Son APK instalables firmados con la clave de depuración local; para publicar
+en una tienda se necesita una compilación de distribución con su firma propia.
